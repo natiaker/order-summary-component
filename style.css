@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: hsl(225, 100%, 94%);
+    background-image: url(images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 327px;
+    height: auto;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.main-img {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+h1 {
+    color: #1F2E55;
+}
+
+p {
+    color: #717FA6;
+}
+
+.content {
+    padding: 32px;
+}
+
+.plan-div {
+    display: flex;
+}
+
+#payment-button {
+    padding: 15px 65px;
+    color: hsl(225, 100%, 98%);
+    background-color: hsl(245, 75%, 52%);
+    border: none;
+    border-radius: 11px;
+}
+
+#cancel-bu8tton {
+    border: none;
+}
