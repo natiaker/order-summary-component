@@ -14,8 +14,8 @@
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://natiaker.github.io/QR-code-component/)
+- Solution URL: [Solution URL](https://github.com/natiaker/order-summary-component.git)
+- Live Site URL: [Llive site URL](https://natiaker.github.io/order-summary-component/)
 
 ### Built with
 
