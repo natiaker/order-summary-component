@@ -7,21 +7,23 @@ body {
     background-color: hsl(225, 100%, 94%);
     background-image: url(images/pattern-background-mobile.svg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Red Hat Display', sans-serif;
 }
 
 .container {
     max-width: 327px;
     height: auto;
-    background-color: hsl(225, 100%, 98%);
+    background-color: #FFF;
     border-radius: 20px;
     text-align: center;
 }
 
 .main-img {
+    display: block;
     width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -29,6 +31,16 @@ body {
 
 h1 {
     color: #1F2E55;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+h4 {
+    color: #717FA6;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    margin: 16px 0 24px;
 }
 
 p {
@@ -36,21 +48,101 @@ p {
 }
 
 .content {
-    padding: 32px;
+    padding: 24px;
 }
 
 .plan-div {
     display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 16px;
+    background-color: #F7F9FF;
+    border-radius: 11px;
+}
+
+.plan-div img {
+    margin-right: 10px;
+}
+
+.plan {
+    margin-right: 48px;
+}
+
+.dark-color {
+    color: #1F2E55;
+    font-weight: 900;
+    font-size: 16px;
+}
+
+.change-button {
+    color: #382AE1;
+    text-decoration: underline;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.change-button:hover {
+    color: #766CF1;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button {
+    font-family: 'Red Hat Display';
+    font-weight: 900;
+    font-size: 16px;
 }
 
 #payment-button {
-    padding: 15px 65px;
+    width: 100%;
+    margin: 24px 0;
+    padding: 15px 58px;
     color: hsl(225, 100%, 98%);
     background-color: hsl(245, 75%, 52%);
     border: none;
     border-radius: 11px;
+    box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
 }
 
-#cancel-bu8tton {
+#cancel-button {
     border: none;
+    background-color: transparent;
+    color: #717FA6;
+    margin-bottom: 8px;
+}
+
+#payment-button:hover {
+    cursor: pointer;
+    background-color: #766CF1;
+}
+
+#cancel-button:hover {
+    cursor: pointer;
+    color: #1F2E55;
+}
+
+@media screen and (min-width:1440px) {
+    body {
+        background-image: url(images/pattern-background-desktop.svg);
+    }
+    
+    .container {
+        max-width: 450px;
+    }
+
+    .content {
+        padding: 48px;
+    }
+
+    .plan-div {
+        padding: 25px;
+    }
+
+    .plan-div img {
+        margin-right: 20px;
+    }
+
+    .plan {
+        margin-right: 95px;
+    }
 }
